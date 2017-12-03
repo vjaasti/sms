@@ -1,0 +1,33 @@
+logging:
+  level: INFO
+  loggers:
+    com.plovo: DEBUG
+  appenders:
+          - type: file
+            currentLogFilename: ./logs/sms.log
+            archivedLogFilenamePattern: ./logs/sms-%d.log.gz
+            timeZone: IST
+template: Hello, %s!
+defaultName: Stranger
+
+test: TEST
+nummax: 16
+nummin: 6
+textmin: 1
+textmax: 120
+
+# Database settings.
+database:
+    driverClass: com.mysql.jdbc.Driver
+    user: root
+    password: myrootpwd
+    url: jdbc:mysql://localhost:3306/plivo
+
+cacheHost: localhost
+cachePort: 11211
+
+# 4hours
+cacheExpiry: 14400
+
+counterTime: 24
+counterLimit: 10
