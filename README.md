@@ -22,8 +22,8 @@ Define other required configs in config.yml and run the application with cmd men
 APIs Avaialable
 ---
 
-POST    /inbound/sms 
-POST    /outbound/sms 
+1. POST    /inbound/sms
+1. POST    /outbound/sms 
 
 Refer requirement Spec for API parameters
 
