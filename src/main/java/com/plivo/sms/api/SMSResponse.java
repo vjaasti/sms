@@ -1,4 +1,4 @@
-package com.plivo.sms.util;
+package com.plivo.sms.api;
 
 public class SMSResponse {
 

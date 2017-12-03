@@ -22,6 +22,7 @@ import org.skife.jdbi.v2.unstable.BindIn;
 @RegisterMapper(PhoneNumberMapper.class)
 @UseStringTemplate3StatementLocator
 public interface PhoneNumberDAO {
+	
 	@SqlQuery("select * from phone_number where account_id = :account_id AND number = :number LIMIT 1")
 	public PhoneNumber findByAccountANDNumber(@Bind("account_id") int account_id, @Bind("number") String number);
 }

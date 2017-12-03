@@ -10,13 +10,13 @@ public class InboundSMSValidator extends DataValidator {
 	public boolean validate(PlivoConfiguration config, SMSRequest smsRequest) throws ParameterException {
 				
 		boolean isValidData = super.validate(config,smsRequest);
-		boolean isValidParam = false;
+		//boolean isValidParam = true; // Future Specialization for Inbound SMS data
 		
 		
 		
 		
 		
-		return isValidData && isValidParam;
+		return isValidData;
 	}
 
 	

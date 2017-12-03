@@ -4,6 +4,7 @@ import java.sql.Timestamp;
 
 import com.plivo.sms.PlivoConfiguration;
 import com.plivo.sms.api.SMSRequest;
+import com.plivo.sms.api.SMSResponse;
 import com.plivo.sms.cache.CacheManager;
 import com.plivo.sms.cache.CacheManagerFactory;
 import com.plivo.sms.db.dao.AccountDAO;
@@ -12,7 +13,6 @@ import com.plivo.sms.db.model.Account;
 import com.plivo.sms.db.model.PhoneNumber;
 import com.plivo.sms.util.ParameterException;
 import com.plivo.sms.util.SMSCounter;
-import com.plivo.sms.util.SMSResponse;
 import com.plivo.sms.validator.DataValidator;
 import com.plivo.sms.validator.OutboundSMSValidator;
 
@@ -114,7 +114,7 @@ public class OutBoundSMSService {
 			/*
 			 *  Get the counter from cache and check the current count and timestamp.
 			 *  Calculates the time diff from cached timestamp and current timestamp
-			 *  if 
+			 *  
 			 */
 			
 			

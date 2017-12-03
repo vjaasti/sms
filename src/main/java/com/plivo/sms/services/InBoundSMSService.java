@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.plivo.sms.PlivoConfiguration;
 import com.plivo.sms.api.SMSRequest;
+import com.plivo.sms.api.SMSResponse;
 import com.plivo.sms.cache.CacheManager;
 import com.plivo.sms.cache.CacheManagerFactory;
 import com.plivo.sms.db.dao.AccountDAO;
@@ -11,7 +12,6 @@ import com.plivo.sms.db.dao.PhoneNumberDAO;
 import com.plivo.sms.db.model.Account;
 import com.plivo.sms.db.model.PhoneNumber;
 import com.plivo.sms.util.ParameterException;
-import com.plivo.sms.util.SMSResponse;
 import com.plivo.sms.validator.DataValidator;
 import com.plivo.sms.validator.InboundSMSValidator;
 
